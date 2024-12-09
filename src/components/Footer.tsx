@@ -1,11 +1,7 @@
-import React from "react";
 import Image from "next/image";
 import { PiClockClockwiseBold } from "react-icons/pi";
 import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 import { FaPinterest } from "react-icons/fa6";
-
-
-
 
 
 

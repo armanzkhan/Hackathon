@@ -1,11 +1,4 @@
-import React from "react";
-
 import Image from "next/image";
-
-// import chef1 from "../public/chef1.jpg";
-// import chef2 from "../public/chef2.jpg";
-// import chef3 from "../public/chef3.jpg";
-// import chef4 from "../public/chef4.jpg";
 
  
 function ChefSection() {
