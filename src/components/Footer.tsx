@@ -187,7 +187,7 @@ const Footer = () => {
         
         <div className="w-[100%] px-4 py-6 bg-gray-100 dark:bg-[#4F4F4F] md:flex md:items-center md:justify-between">
           <span className="text-sm text-gray-500 dark:text-gray-300 sm:text-center">
-            © 2023 <a href="https://flowbite.com/">Flowbite™</a>. All Rights
+            © 2022 <a href="https://flowbite.com/">Ayeman™</a>. All Rights
             Reserved.
           </span>
 
@@ -195,7 +195,7 @@ const Footer = () => {
             <div className="w-[36px] h-[34px] flex justify-center items-center rounded"><FaFacebookF/></div>
             <div className="w-[36px] h-[34px] flex justify-center items-center rounded"><FaTwitter/></div>
             <div className="w-[36px] h-[34px] flex justify-center items-center rounded"><FaInstagram/></div>
-            <div className="w-[36px] h-[34px] flex justify-center items-center rounded"><FaYoutube/></div>
+            <div className="w-[36px] h-[34px] flex justify-center items-center rounded bg-red-500"><FaYoutube/></div>
             <div className="w-[36px] h-[34px] flex justify-center items-center rounded"><FaPinterest/></div>
           </div>
          

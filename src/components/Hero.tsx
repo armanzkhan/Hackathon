@@ -1,45 +1,50 @@
-import Image from "next/image";
 
-export default function Hero() {
+import Image from 'next/image';
+import { Button } from './Button';
+function Hero() {
   return (
-    <main className="w-full flex justify-center items-center">
-      <div className="sm:w-full md:w-[100%] sm:p-5 sm:h-auto md:h-[500px] flex sm:flex-col md:flex-row sm:justify-center md:justify-center sm:items-center md:items-center bg-black w-full">
-        <div className="sm:w-full md:w-[50%] p-4 text-center sm:text-left">
-          <h3 className="text-yellow-500 font-sans">It's Quick & Amusing</h3>
-
-          <h1 className="text-white font-bold font-sans sm:text-2xl md:text-3xl lg:text-5xl flex flex-row mt-2">
-            <div className="text-yellow-400">Th</div>e Art of Speed
-          </h1>
-          <h2 className="text-white font-bold sm:text-xl md:text-3xl lg:text-5xl pt-4">
-            Food Quality
-          </h2>
-          
-          {/* Description */}
-          <div className="flex sm:flex-wrap sm:justify-center md:justify-start pt-5 pb-4 gap-4">
-            <p className="text-white text-sm sm:text-center md:text-left">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
-              facere voluptatum tempore massa conque.
-            </p>
-          </div>
-
-          {/* Button */}
-          <button className="bg-yellow-500 w-190 sm:w-full md:w-auto sm:px-3 md:px-7 sm:text-sm py-0 text-gray-400 rounded-full h-10">
-            See Menu
-          </button>
-        </div>
-
-        {/* Image */}
-        <div className="sm:w-full md:w-[40%] lg:w-[30%] pl-7 justify-center items-center flex flex-row">
-          <Image
-            width={624.15}
-            height={633.51}
-            src="/hero-plate.png"
-            alt="heroPlate"
-            className="w-full h-auto shadow-md"
-          />
-        </div>
-      </div>
+    <main className=" h-full py-20 w-screen flex flex-col md:flex-row items-center bg-[url('/images/hero1.svg')] bg-cover bg-center">
+<div className=' flex w-[80%] md:w-1/2 justify-center md:justify-end'>
+<div className=' flex gap-4 justify-end items-center w-[85%]'>
+    <div>
+        <Image
+        src={'/images/listicon.svg'}
+        alt='list'
+        height={592}
+        width={25}
+         />
+    </div>
+    <div className='flex flex-col gap-2'>
+ <Image
+ src={'/images/text.svg'}
+ alt='font'
+ height={40}
+ width={240}
+ />
+ <h1 className=' text-text font-bold text-4xl lg:text-5xl xl:text-6xl'>
+    <span className='text-primary1'>Th</span>e Art of speed food Quality
+ </h1>
+ <p className=' text-text font-inter font-light text-sm'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+ Varius sed pharetra dictum neque massa congue</p>
+ <Button variant="outline"
+ className=' bg-primary1 text-text w-36 border-none rounded-full'
+ >See Menu</Button>
+ </div>
+</div>
+</div>
+<div className=' flex justify-center w-[90%] md:w-1/2'>
+<div className=' w-[85%] sm:w-[90%] '>
+    <Image
+    className='p-3'
+    src={'/images/hero2.svg'}
+    alt='hero2'
+    height={670}
+    width={877}
+    />
+</div>
+</div>
     </main>
-  );
+  )
 }
 
+export default Hero;
